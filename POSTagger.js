@@ -6,12 +6,12 @@
  * http://www.opensource.org/licenses/lgpl-3.0.html
  */
 
-var TransformationRules = require('./BrillTransformationRules');
-var transformationRules = new TransformationRules();
+//var TransformationRules = require('./BrillTransformationRules');
+var transformationRules = new BrillTransformationRules();
 
-module.exports = POSTagger;
+//module.exports = POSTagger;
 function POSTagger(){
-    this.lexicon = require('./lexicon');
+    this.lexicon = module.exports; // this.lexicon = require('./lexicon');
 }
 
 POSTagger.prototype.wordInLexicon = function(word){

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test pos.js in Browser</title>
+</head>
+<body>
+
+<script>
+    var module = {};
+    console.log("defined module to prevent a change of lexicon.js", module)
+</script>
+<script src="BrillTransformationRules.js"></script>
+<script src="lexicon.js"></script>
+<script src="POSTagger.js"></script>
+<script src="lexer.js"></script>
+<script src="test.js"></script>
+<script>
+    var msg = "pos.js successfully tested";
+    console.log(msg)
+    document.write(msg);
+</script>
+
+</body>
+</html>
